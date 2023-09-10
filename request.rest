@@ -1,0 +1,29 @@
+GET http://localhost:3000/products
+###
+GET http://localhost:3000/products/1
+###
+POST http://localhost:3000/products
+Content-Type: application/json
+
+{
+    "userId": 2,
+    "name": "pensil",
+    "price": 3000,
+    "stock": 20,
+    "status": true,
+    "image_url": "pensil.jpg"
+}
+###
+PATCH http://localhost:3000/products/1
+Content-Type: application/json
+
+{
+    "userId": 2,
+    "name": "buku",
+    "price": 4000,
+    "stock": 40,
+    "status": true,
+    "image_url": "buku.jpg"
+}
+###
+DELETE http://localhost:3000/products/3
